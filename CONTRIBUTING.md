@@ -15,8 +15,7 @@
 ## 📝 Правила именования (Style Guide)
 Соблюдаем официальный стиль Godot:
 
-* **Скрипты (.gd):** используем `snake_case`. 
-  * *Правильно:* `player_controller.gd`, `score_manager.gd`.
+
 * **Сцены (.tscn):** используем `PascalCase`.
   * *Правильно:* `MainMenu.tscn`, `GlobalBackground.tscn`.
 * **Переменные и функции:** `snake_case`.
