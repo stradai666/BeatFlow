@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://deo8l4vd504cc"]
+
+[ext_resource type="Script" uid="uid://bre0l037pg6gg" path="res://scripts/note.gd" id="1_1bnk6"]
+[ext_resource type="Texture2D" uid="uid://dc0octn45mbvm" path="res://assets/romb.png" id="2_43c4j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eo7dk"]
+size = Vector2(66, 53)
+
+[node name="Note" type="Area2D" unique_id=829580894 groups=["notes"]]
+script = ExtResource("1_1bnk6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=875882009]
+position = Vector2(0, 9.536743e-07)
+scale = Vector2(1.21875, 1.1874999)
+texture = ExtResource("2_43c4j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=585114697]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_eo7dk")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1077545086]
+show_behind_parent = true
+z_index = -1
+width = 30.0
+default_color = Color(0.80859345, 0.0021785903, 0.98597723, 1)
+
+[node name="TailVisual" type="ColorRect" parent="." unique_id=528850802]
+visible = false
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 10.0
+color = Color(0.34509805, 0, 0.96862745, 1)
