@@ -16,8 +16,7 @@
 Соблюдаем официальный стиль Godot:
 
 
-* **Сцены (.tscn):** используем `PascalCase`.
-  * *Правильно:* `MainMenu.tscn`, `GlobalBackground.tscn`.
+
 * **Переменные и функции:** `snake_case`.
   * *Пример:* `var current_score`, `func play_animation()`.
 * **Константы:** `UPPER_SNAKE_CASE`.
